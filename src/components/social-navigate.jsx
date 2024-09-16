@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialNavigate() {
   return (
-    <div className="hidden md:flex w-[45px] fixed left-[30px] bottom-[30px] flex-col gap-[15px]">
+    <div className="hidden md:flex w-[45px] fixed left-[30px] bottom-[30px] flex-col gap-[15px] z-10">
       <a
         href="https://github.com/trainthunder"
         target="_blank"
