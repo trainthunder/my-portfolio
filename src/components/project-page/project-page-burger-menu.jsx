@@ -30,7 +30,7 @@ function ProjectPageBurgerMenu() {
   return (
     <>
       {isProjectMenu === true ? (
-        <div className="w-full h-full bg-black absolute top-0 left-0 md:hidden flex flex-col items-center pt-[60px] z-20">
+        <div className="w-full h-full bg-black fixed top-0 left-0 md:hidden flex flex-col items-center pt-[60px] z-20">
           <button
             className="absolute top-5 right-8"
             onClick={() => {
