@@ -28,13 +28,13 @@ function AboutPageMain() {
           className="min-[535px]:w-[500px] min-[535px]:h-[350px] rounded-[16px]"
         />
         <div className="w-full h-full max-w-[450px] md:max-w-[575px] flex flex-col mt-[50px] gap-[30px]">
-          <p className="font-poppins text-gray-400 text-[20px] font-semibold">
+          <p className="font-poppins text-gray-500 text-[20px] font-semibold">
             - INTRODUCTION
           </p>
-          <p className="font-poppins text-white font-bold text-[30px] md:text-[42px]">
+          <p className="font-poppins text-black font-bold text-[30px] md:text-[42px]">
             FRONTEND DEVELOPER
           </p>
-          <p className="font-poppins text-gray-400 text-[20px] font-medium">
+          <p className="font-poppins text-gray-500 text-[20px] font-medium">
             I am a frontend software developing looking for a junior role in a
             software development agency. I am familiar with React and
             JavaScript. However, I am open to working on any tech stack and am
@@ -62,24 +62,24 @@ function AboutPageMain() {
         </div>
       </div>
       <div className="w-full max-w-[1300px] h-full max-[1330px]:px-[15px] flex flex-col items-center justify-center">
-        <p className="font-poppins text-gray-400 font-semibold text-[20px]">
+        <p className="font-poppins text-gray-500 font-semibold text-[20px]">
           -SKILLS
         </p>
-        <p className="font-popins text-white font-semibold text-[30px] md:text-[42px] mt-[15px]">
+        <p className="font-popins text-black font-semibold text-[30px] md:text-[42px] mt-[15px]">
           My Specialities are in
         </p>
         <div className="w-full h-full p-[40px] grid md:grid-cols-2 gap-[15px]">
           {skills.map((skill, index) => (
             <div key={index} className="w-full max-w-[640px] mb-[30px]">
               <div className="flex justify-between items-center">
-                <span className="font-poppins text-white text-[16px] font-medium">
+                <span className="font-poppins text-black text-[16px] font-medium">
                   {skill.name}
                 </span>
-                <span className="font-poppins font-medium text-[16px] text-gray-400">
+                <span className="font-poppins font-medium text-[16px] text-black">
                   {skill.percentage}%
                 </span>
               </div>
-              <div className="w-full bg-gray-700 rounded-full h-[10px] mt-2">
+              <div className="w-full bg-black rounded-full h-[10px] mt-2">
                 <div
                   className="bg-yellow-500 h-[10px] rounded-full"
                   style={{ width: `${skill.percentage}%` }}

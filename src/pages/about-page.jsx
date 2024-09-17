@@ -7,7 +7,7 @@ import AboutPageMain from "../components/about-page/about-page-main";
 function AboutPage() {
   return (
     <BurgerMenuProvider>
-      <div className="w-full h-full bg-black overflow-clip">
+      <div className="w-full h-full bg-white overflow-clip">
         <AboutPageHeader />
         <AboutPageBurgerMenu />
         <AboutPageMain />
