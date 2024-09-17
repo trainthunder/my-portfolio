@@ -16,53 +16,53 @@ function ProjectPageMain() {
     <section className="w-full h-full pt-[60px] md:pt-[69px] flex flex-col items-center relative">
       <SocialNavigate />
       <div className="w-full max-w-[1300px] max-[1330px]:px-[15px] flex flex-col items-center justify-center mt-[90px] gap-[30px] mb-[30px]">
-        <p className="font-poppins text-gray-400 font-semibold text-[16px]">
+        <p className="font-poppins text-gray-500 font-semibold text-[16px]">
           - PORTFOLIO
         </p>
-        <p className="font-poppins text-white font-semibold text-[32px] text-center">
+        <p className="font-poppins text-black font-semibold text-[32px] text-center">
           MY COLLECTIONS
         </p>
         <div className="w-full max-w-[770px]  flex flex-col">
-          <p className="font-poppins text-[14px] text-gray-400 font-medium text-center leading-7">
+          <p className="font-poppins text-[14px] lg:text-[16px] text-gray-500 font-medium text-center leading-7">
             I focus on developing customizable web and mobile applications to
             meet a variety of needs, from e-commerce platforms to data
             visualization dashboards, using the latest technologies and agile
             methodologies to deliver a superior user experience.
           </p>
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex items-center justify-center mt-[30px] min-[425px]:gap-[10px] lg:gap-[20px]">
             {/** Frontend Button Start */}
             {isSelected === "frontend" ? (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-yellow-500"
+                className="flex items-center justify-center p-[15px] bg-black rounded-[8px]"
                 onClick={() => {
                   setIsSelected("frontend");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]">
                   <img
-                    src="/icons/frontend-selected-icon.png"
+                    src="/icons/front-end-white.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-semibold text-yellow-500">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-semibold text-yellow-500">
                     Frontend
                   </span>
                 </div>
               </button>
             ) : (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-gray-400"
+                className="flex items-center justify-center p-[15px] border-[1px] rounded-[8px]"
                 onClick={() => {
                   setIsSelected("frontend");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]">
                   <img
-                    src="/icons/frontend-selected-icon.png"
+                    src="/icons/front-end-black.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-medium text-gray-200">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-medium text-gray-500">
                     Frontend
                   </span>
                 </div>
@@ -73,36 +73,36 @@ function ProjectPageMain() {
             {/** Backend Button Start */}
             {isSelected === "backend" ? (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-yellow-500"
+                className="flex items-center justify-center p-[15px] bg-black rounded-[8px]"
                 onClick={() => {
                   setIsSelected("backend");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]">
                   <img
-                    src="/icons/backend-selected-icon.png"
+                    src="/icons/back-end-white.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-semibold text-yellow-500">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-semibold text-yellow-500">
                     Backend
                   </span>
                 </div>
               </button>
             ) : (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-gray-400"
+                className="flex items-center justify-center p-[15px] border-[1px] rounded-[8px]"
                 onClick={() => {
                   setIsSelected("backend");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]">
                   <img
-                    src="/icons/backend-selected-icon.png"
+                    src="/icons/back-end-black.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-medium text-gray-200">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-medium text-gray-500">
                     Backend
                   </span>
                 </div>
@@ -113,36 +113,36 @@ function ProjectPageMain() {
             {/** Full-Stack Button Start */}
             {isSelected === "fullstack" ? (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-yellow-500"
+                className="flex items-center justify-center p-[15px] bg-black rounded-[8px]"
                 onClick={() => {
                   setIsSelected("fullstack");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]]">
                   <img
-                    src="/icons/fullstack-selected-icon.png"
+                    src="/icons/full-stack-white.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-semibold text-yellow-500">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-semibold text-yellow-500">
                     Fullstack
                   </span>
                 </div>
               </button>
             ) : (
               <button
-                className="flex items-center justify-center p-[15px] border-b-[2px] border-b-gray-400"
+                className="flex items-center justify-center p-[15px] border-[1px] rounded-[8px]"
                 onClick={() => {
                   setIsSelected("fullstack");
                 }}
               >
-                <div className="flex items-center gap-[15px]">
+                <div className="flex items-center justify-center gap-[5px] min-[375px]:gap-[10px] min-[425px]:gap-[15px]">
                   <img
-                    src="/icons/fullstack-selected-icon.png"
+                    src="/icons/full-stack-black.png"
                     alt=""
                     className="w-[24px] h-[24px]"
                   />
-                  <span className="font-poppins text-[14px] font-medium text-gray-200">
+                  <span className="font-poppins text-[12px] md:text-[14px] font-medium text-gray-500">
                     Fullstack
                   </span>
                 </div>
@@ -159,7 +159,7 @@ function ProjectPageMain() {
           filterProject.map((items, index) => {
             return (
               <div
-                className="w-full md:max-w-[450px] lg:max-w-[375px] p-[15px] bg-gray-900 rounded-[8px]"
+                className="w-full md:max-w-[450px] lg:max-w-[375px] p-[15px] bg-black rounded-[8px]"
                 key={index}
               >
                 <div className="w-full h-full flex flex-col gap-[10px]">
@@ -217,7 +217,7 @@ function ProjectPageMain() {
           })
         ) : (
           <div className="bg-transparent flex items-center justify-center">
-            <p className="font-poppins font-semibold text-[24px] text-gray-400">
+            <p className="font-poppins font-semibold text-[24px] text-gray-500">
               No Project Right Now!
             </p>
           </div>
@@ -229,7 +229,7 @@ function ProjectPageMain() {
       <div className="w-full max-w-[1300px] h-full px-[15px] mb-[60px]">
         <div className="w-full h-full flex flex-col gap-[15px] sm:grid sm:grid-cols-2 md:grid-cols-3 md:px-[30px]">
           {/** Count Frontend Project Card Start */}
-          <div className="w-full h-full p-[30px] bg-gray-800 rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
+          <div className="w-full h-full p-[30px] bg-black rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
             <img
               src="/icons/frontend-icon.png"
               alt=""
@@ -245,7 +245,7 @@ function ProjectPageMain() {
           {/** Count Frontend Project Card End */}
 
           {/** Count Backend Project Card Start */}
-          <div className="w-full h-full p-[30px] bg-gray-800 rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
+          <div className="w-full h-full p-[30px] bg-black rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
             <img
               src="/icons/backend-icon.png"
               alt=""
@@ -261,7 +261,7 @@ function ProjectPageMain() {
           {/** Count Backend Project Card End */}
 
           {/** Count Full-Stack Project Card Start */}
-          <div className="w-full h-full p-[30px] bg-gray-800 rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
+          <div className="w-full h-full p-[30px] bg-black rounded-xl transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col items-center gap-[15px]">
             <img
               src="/icons/fullstack-icon.png"
               alt=""

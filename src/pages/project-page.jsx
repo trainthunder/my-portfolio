@@ -7,7 +7,7 @@ import ProjectPageMain from "../components/project-page/project-page-main";
 function ProjectPage() {
   return (
     <BurgerMenuProvider>
-      <div className="w-full h-full bg-black overflow-clip">
+      <div className="w-full h-full bg-white overflow-clip">
         <ProjectPageHeader />
         <ProjectPageBurgerMenu />
         <ProjectPageMain />
