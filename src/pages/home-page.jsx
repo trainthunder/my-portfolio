@@ -7,7 +7,7 @@ import HomePageBurgerMenu from "../components/home-page/home-page-burger-menu";
 function HomePage() {
   return (
     <BurgerMenuProvider>
-      <div className="w-screen h-screen bg-black overflow-clip">
+      <div className="w-screen h-screen bg-white overflow-clip">
         <HomePageHeader />
         <HomePageMain />
         <HomePageBurgerMenu />
