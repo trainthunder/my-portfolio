@@ -6,6 +6,7 @@ function BurgerMenuProvider({ children }) {
   const [isHomeMenu, setIsHomeMenu] = useState(false);
   const [isAboutMenu, setIsAboutMenu] = useState(false);
   const [isProjectMenu, setIsProjectMenu] = useState(false);
+  const [isContactMenu, setIsContactMenu] = useState(false);
 
   return (
     <userBurgerMenuContext.Provider
@@ -16,6 +17,8 @@ function BurgerMenuProvider({ children }) {
         setIsAboutMenu,
         isProjectMenu,
         setIsProjectMenu,
+        isContactMenu,
+        setIsContactMenu,
       }}
     >
       {children}
