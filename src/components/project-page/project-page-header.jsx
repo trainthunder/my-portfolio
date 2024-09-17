@@ -7,7 +7,7 @@ function ProjectPageHeader() {
   const { setIsProjectMenu } = useBurgerMenu();
 
   return (
-    <header className="w-full flex items-center justify-center fixed z-10 backdrop-blur-3xl">
+    <header className="w-full bg-black flex items-center justify-center fixed z-10 backdrop-blur-3xl">
       <div className="w-full max-w-[1300px] h-full px-[30px] py-[15px] flex items-center justify-between">
         <button
           className="font-poppins text-gray-400 text-[20px] md:text-[26px] font-bold"
