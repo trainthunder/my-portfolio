@@ -154,7 +154,7 @@ function ProjectPageMain() {
       </div>
 
       {/** Project Card Section Start*/}
-      <div className="w-full max-w-[1300px] px-[15px] md:px-[55px] lg:px-[65px] flex md:grid md:grid-cols-2 lg:grid-cols-3 mb-[60px]">
+      <div className="w-full max-w-[1300px] px-[15px] md:px-[55px] lg:px-[65px] grid grid-cols-1 gap-[20px] md:grid-cols-2 lg:grid-cols-3 mb-[60px]">
         {filterProject.length ? (
           filterProject.map((items, index) => {
             return (
