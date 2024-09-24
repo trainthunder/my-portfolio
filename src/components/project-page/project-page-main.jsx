@@ -12,6 +12,18 @@ function ProjectPageMain() {
     return filterByCategory;
   });
 
+  const countFrontend = datas.filter((items) => {
+    return items.category.includes("frontend");
+  }).length;
+
+  const countBackend = datas.filter((items) => {
+    return items.category.includes("backend");
+  }).length;
+
+  const countFullStack = datas.filter((items) => {
+    return items.category.includes("fullstack");
+  }).length;
+
   return (
     <section className="w-full h-full pt-[60px] md:pt-[69px] flex flex-col items-center relative">
       <SocialNavigate />
@@ -239,7 +251,7 @@ function ProjectPageMain() {
               Frontend Project
             </p>
             <p className="font-poppins text-[16px] text-yellow-500">
-              1 projects
+              {countFrontend} projects
             </p>
           </div>
           {/** Count Frontend Project Card End */}
@@ -255,7 +267,7 @@ function ProjectPageMain() {
               Backend Project
             </p>
             <p className="font-poppins text-[16px] text-yellow-500">
-              0 projects
+              {countBackend} projects
             </p>
           </div>
           {/** Count Backend Project Card End */}
@@ -271,7 +283,7 @@ function ProjectPageMain() {
               Full Stack Project
             </p>
             <p className="font-poppins text-[16px] text-yellow-500">
-              0 projects
+              {countFullStack} projects
             </p>
           </div>
           {/** Count Full-Stack Project Card End */}
